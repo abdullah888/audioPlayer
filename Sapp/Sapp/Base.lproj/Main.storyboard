@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCp-Le-SC1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-music_library" translatesAutoresizingMaskIntoConstraints="NO" id="He1-ce-XYi">
+                                <rect key="frame" x="87" y="222" width="240" height="200"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="X57-qn-EY8">
+                                <rect key="frame" x="30" y="572" width="354" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLR-0s-4v0">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="45"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="اعاده"/>
+                                        <connections>
+                                            <action selector="Restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tVk-Yi-scl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehf-Dj-4ZD">
+                                        <rect key="frame" x="130" y="0.0" width="94" height="45"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="ايقاف"/>
+                                        <connections>
+                                            <action selector="Pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TgG-tO-tho"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StL-u9-72l">
+                                        <rect key="frame" x="260" y="0.0" width="94" height="45"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="تشغيل"/>
+                                        <connections>
+                                            <action selector="Play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ja2-qC-7aJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="vSM-b6-Xed"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dL-h7-ZRH">
+                                <rect key="frame" x="30" y="462" width="354" height="0.0"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5dL-h7-ZRH" firstAttribute="top" secondItem="He1-ce-XYi" secondAttribute="bottom" constant="40" id="1q2-Z7-S9x"/>
+                            <constraint firstItem="JCp-Le-SC1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3e6-uR-fXV"/>
+                            <constraint firstItem="JCp-Le-SC1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="D5D-4f-unh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JCp-Le-SC1" secondAttribute="bottom" constant="700" id="DpI-w9-JJ1"/>
+                            <constraint firstAttribute="trailing" secondItem="JCp-Le-SC1" secondAttribute="trailing" id="IIQ-a8-CYs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X57-qn-EY8" secondAttribute="trailing" constant="30" id="OrM-Jq-ZWX"/>
+                            <constraint firstItem="He1-ce-XYi" firstAttribute="top" secondItem="JCp-Le-SC1" secondAttribute="bottom" constant="60" id="Srt-AN-td4"/>
+                            <constraint firstItem="X57-qn-EY8" firstAttribute="top" secondItem="He1-ce-XYi" secondAttribute="bottom" constant="150" id="UTA-oP-bEt"/>
+                            <constraint firstItem="X57-qn-EY8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Xla-oa-LX3"/>
+                            <constraint firstItem="He1-ce-XYi" firstAttribute="centerX" secondItem="JCp-Le-SC1" secondAttribute="centerX" id="alB-Kl-Vd8"/>
+                            <constraint firstItem="He1-ce-XYi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="gyL-ef-A8z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5dL-h7-ZRH" secondAttribute="trailing" constant="30" id="jhe-Tz-daB"/>
+                            <constraint firstItem="5dL-h7-ZRH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="sVE-1A-knU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="He1-ce-XYi" secondAttribute="bottom" constant="440" id="xFb-Tz-TFf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="B8l-EO-00w"/>
+                    <connections>
+                        <outlet property="ImageView" destination="He1-ce-XYi" id="TRc-Q5-VAi"/>
+                        <outlet property="Label" destination="5dL-h7-ZRH" id="cBT-nO-9kP"/>
+                        <outlet property="MyView" destination="JCp-Le-SC1" id="WhE-r1-RJc"/>
+                        <outlet property="PauseOutLet" destination="Ehf-Dj-4ZD" id="RLE-UE-YV7"/>
+                        <outlet property="PlayOutLet" destination="StL-u9-72l" id="XMX-OW-cVf"/>
+                        <outlet property="RestartOutLet" destination="sLR-0s-4v0" id="sb5-iK-g4k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="60.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-music_library" width="256" height="256"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
